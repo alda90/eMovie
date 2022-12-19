@@ -25,6 +25,12 @@ class HomeRouter: HomeRouterProtocol {
     var presenter: HomePresenterProtocol?
     
     static func createHomeModule() -> UIViewController {
+        
+        
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// MARK: I choose this implementation to create every class, but it can be improved
+        /// with the builder patter, and adding dependecy injection when the instances are created.
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         let view = HomeView()
 
         let interactor = HomeInteractor()
